@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+#preloader{
+    background: #181310 url(../assets/loader.gif) no-repeat center center; /* Image source: SirSamuelTheGreat */
+    background-size: 22%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #181310;
+    color: #ffffff;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    background-color: #181310;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    display: flex; /* Adicionando flex container */
+    flex-direction: column; /* Alinhando os itens verticalmente */
+    justify-content: center; /* Centralizando verticalmente */
+    align-items: center; /* Centralizando horizontalmente */
+    margin-left: 1%;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    background-size: 10%;
+    height: 90px;
+    margin-top: 2%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+    display: block;
+    padding: 10px; 
+}
+
+.sidebar ul li a:hover {
+    color: #d07e51; 
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+footer{
+    background-color: #181310;
+    width: 100vw;
+    padding-bottom: 5vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p, footer a {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a, footer a:active, footer a:visited{
+    color: white;
+}
+
+#footerInner{
+    margin: auto;
+    border-top: 1px solid #1C1B1D;
+    width: 70vw;
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: fit-content;
+}
+
+#footerLeftSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+#footerLeftSection a{
+    color: #d07e51;
+}
+
+footer img{
+    height: 3vw;
+}
+
+#footerRightSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#footerInner div div{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    width: fit-content;
+}
+
+iframe{
+    display: none;
+}
